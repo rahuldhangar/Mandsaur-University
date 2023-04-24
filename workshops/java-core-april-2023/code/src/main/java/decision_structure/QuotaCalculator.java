@@ -3,7 +3,6 @@ package decision_structure;
 import java.util.Scanner;
 
 public class QuotaCalculator {
-
     public static void main(String[] args) {
 
         int quota = 10;
@@ -12,14 +11,12 @@ public class QuotaCalculator {
         Scanner scanner = new Scanner(System.in);
         int sales = scanner.nextInt();
         scanner.close();
-
-        if(sales >= quota){
-            System.out.println("Congrats! You've met your quota");
+        if (sales >= 10 ){
+            System.out.println("Congratulations! You have made it!!");
         }
-        else{
+        else {
             int salesShort = quota - sales;
-            System.out.println("You did not make your quota. " +
-                    "You were " + salesShort + " sales short.");
+            System.out.println("You did not make the quota. You were " + salesShort + " sales short.");
         }
     }
 }

@@ -3,7 +3,6 @@ package loops;
 import java.util.Scanner;
 
 public class GrossPayInputValidation {
-
     public static void main(String[] args) {
 
         double rate = 15;
@@ -13,14 +12,13 @@ public class GrossPayInputValidation {
         Scanner scanner = new Scanner(System.in);
         double hoursWorked = scanner.nextDouble();
 
-        while (hoursWorked > maxHours || hoursWorked < 0) {
-            System.out.println("Invalid entry. Your hours must be between 0 and 40. Try again.");
+        while( hoursWorked > maxHours ){
+            System.out.println(".Hours must be between 0 & 40. Please try again");
             hoursWorked = scanner.nextDouble();
         }
-
         scanner.close();
 
         double grossPay = hoursWorked * rate;
-        System.out.println("Gross pay: " + grossPay);
+        System.out.println("Gross Pay is: " + grossPay);
     }
 }
