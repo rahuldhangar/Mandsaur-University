@@ -59,7 +59,7 @@ public class CollectionsDemo {
     }
     public static void mapDemo(){
         Map fruitCalories = new HashMap();
-        fruitCalories.       ("apple", 85);
+        fruitCalories.put("apple", 85);
         fruitCalories.put("lemon", 22);
         fruitCalories.put("banana",105);
         fruitCalories.put("mango",65);
